@@ -1,18 +1,32 @@
 #pragma once
+#include"ConsoleMath.h"
+#include <assert.h>
 class TextScreen
 {
-public:// 어디서든 참조 가능
-	// constrcuter destructer
-	TextScreen();//생성자
-	~TextScreen();//소멸자
+public:
+	TextScreen(int _Width, int _Height,const char* _DefaultValue);
+	~TextScreen();
 
-	// delete Function
-	TextScreen(const TextScreen& _Other) = delete;//복사 생성자
-	TextScreen(TextScreen&& _Other) noexcept = delete;//레퍼런스 생성자
-	TextScreen& operator=(const TextScreen& _Other) = delete;//대입연산자(복사)
-	TextScreen& operator=(TextScreen&& _Other) noexcept = delete;//Rvalue 레퍼런스 생성자
-protected:// 상속관계일 경우 참조 가능
+	TextScreen(const TextScreen& _Other) = delete;
+	TextScreen(TextScreen&& _Other) noexcept = delete;
+	TextScreen& operator=(const TextScreen& _Other) = delete;
+	TextScreen& operator=(TextScreen&& _Other) noexcept = delete;
 
-private://해당 클래스에서만 참조 가능
+
+	ConsoleVector GetSize()
+	{
+		return Size_;
+	}
+	void CreateScreen(int _width, int _Height, const char* _DefaultValue);
+	void PrintScreen();
+	void SettingScreen();
+
+	void SetPixel(ConsoleVector _Pos,  const char* _DefaultValue);
+	void SetPixel(int _X, int _Y, const char* _DefaultValue);
+	void Cheak(ConsoleVector _Pos);
+private:
+	ConsoleVector Size_;
+	char** PixelData_;
+	char DefaultPixel_[3];
 
 };

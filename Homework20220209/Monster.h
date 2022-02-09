@@ -1,4 +1,6 @@
 #pragma once
+#include"ConsoleMath.h"
+
 class Monster
 {
 public:// 어디서든 참조 가능
@@ -14,5 +16,5 @@ public:// 어디서든 참조 가능
 protected:// 상속관계일 경우 참조 가능
 
 private://해당 클래스에서만 참조 가능
-
+	ConsoleVector Pos;
 };

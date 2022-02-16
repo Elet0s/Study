@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="DataCopy.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="SizeCopy.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Setting">
+      <UniqueIdentifier>{dd2cb194-e9ac-4512-90da-780cc9a62656}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataCopy.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="SizeCopy.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -72,7 +72,7 @@ int main(void)
 		}
 		else if (Value == '2')
 		{
-			printf_s("미구현");
+			printf_s("미구현\n");
 		}
 		else if (Value == '3')
 		{

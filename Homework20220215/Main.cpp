@@ -72,7 +72,7 @@ int main(void)
 		}
 		else if (Value == '2')
 		{
-
+			printf_s("¹Ì±¸Çö");
 		}
 		else if (Value == '3')
 		{

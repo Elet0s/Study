@@ -15,6 +15,7 @@ public:
 	void AllValueSetting(const DataType& Data);
 	void Release();
 	void ReSize(unsigned int _Size);
+	void CheakSize(int _Size);
 
 
 public:
@@ -24,5 +25,6 @@ public:
 
 private:
 	int Size_;
+	int Cheak_;
 	DataType* ArrData_;
 };

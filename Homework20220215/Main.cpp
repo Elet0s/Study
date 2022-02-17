@@ -46,7 +46,27 @@ int main(void)
 		}
 		else if (Value == '2')
 		{
-			printf_s("미구현\n");
+			DataCopy MyData1 = DataCopy(10);
+			DataCopy MyData2 = DataCopy(15);
+			DataCopy MyData3 = DataCopy(5);
+
+			MyData1.AllValueSetting(1);
+			MyData2.AllValueSetting(2);
+			MyData3.AllValueSetting(3);
+
+			PrintConsole DataPrint = PrintConsole();
+
+			DataPrint.PrintA(MyData1);
+			DataPrint.PrintA(MyData2);
+			DataPrint.PrintA(MyData3);
+
+			MyData1 = MyData2;
+			printf_s("1에 2대입 : ");
+			DataPrint.PrintA(MyData1);
+
+			MyData1 = MyData3;
+			printf_s("1에 3대입 : ");
+			DataPrint.PrintA(MyData1);
 		}
 		else if (Value == '3')
 		{

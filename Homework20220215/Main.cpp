@@ -2,72 +2,46 @@
 #include"DataCopy.h"
 #include<iostream>
 #include<conio.h>
+#include"PrintConsole.h"
+#include<crtdbg.h>
 
 
 int main(void)
 {
-	std::cout << "1:DataCopy Test" << std::endl;
-	std::cout << "2:SizeCopy Test" << std::endl;
-	std::cout << "3:Program End" << std::endl;
+	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+
+	std::cout << "1:SizeCopy Test" << std::endl;
+	std::cout << "2:DataCopy Test" << std::endl;
+	std::cout << "3:Clear Screen" << std::endl;
+	std::cout << "4:Program End\n" << std::endl;
 	for (;;)
 	{
 		int Value = _getch();
 		if (Value == '1')
 		{
-			DataCopy MyData1 = DataCopy(10);
-			DataCopy MyData2 = DataCopy(15);
-			DataCopy MyData3 = DataCopy(5);
+			SizeCopy MySize1 = SizeCopy(10);
+			SizeCopy MySize2 = SizeCopy(15);
+			SizeCopy MySize3 = SizeCopy(5);
 
-			MyData1.AllValueSetting(1);
-			MyData2.AllValueSetting(2);
-			MyData3.AllValueSetting(3);
+			MySize1.AllValueSetting(1);
+			MySize2.AllValueSetting(2);
+			MySize3.AllValueSetting(3);
 
-			for (size_t i = 0; i < MyData1.GetSize(); i++)
-			{
-				printf_s("%d", MyData1[i]);
-			}
-			printf_s("\n");
-			for (size_t i = 0; i < MyData2.GetSize(); i++)
-			{
-				printf_s("%d", MyData2[i]);
-			}
-			printf_s("\n");
-			for (size_t i = 0; i < MyData3.GetSize(); i++)
-			{
-				printf_s("%d", MyData3[i]);
-			}
-			printf_s("\n");
-			_getch();
-			MyData1 = MyData2;
-			printf_s("1에 2대입\n");
-			for (size_t i = 0; i < MyData1.GetSize(); i++)
-			{
-				printf_s("%d", MyData1[i]);
-			}
-			printf_s("\n");
-			MyData1 = MyData3;
-			printf_s("1에 3대입\n");
-			for (size_t i = 0; i < MyData1.GetSize(); i++)
-			{
-				printf_s("%d", MyData1[i]);
-			}
-			printf_s("\n");
-			printf_s("여기 밑 Size\n");
-			for (int i = 0; i < MyData1.GetSize(); i++)
-			{
-				printf_s("%d", i);
-			}
-			printf_s("\n");
-			for (int i = 0; i < MyData2.GetSize(); i++)
-			{
-				printf_s("%d", i);
-			}
-			printf_s("\n");
-			for (int i = 0; i < MyData3.GetSize(); i++)
-			{
-				printf_s("%d", i);
-			}
-			_getch();
+			PrintConsole SizePrint= PrintConsole();
+			
+			SizePrint.PrintA(MySize1);
+			SizePrint.PrintA(MySize2);
+			SizePrint.PrintA(MySize3);
+
+			MySize1 = MySize2;
+			printf_s("1에 2대입 : ");
+			SizePrint.PrintA(MySize1);
+
+			
+			MySize1 = MySize3;
+			printf_s("1에 3대입 : ");
+			SizePrint.PrintA(MySize1);
+			
 
 		}
 		else if (Value == '2')
@@ -75,6 +49,14 @@ int main(void)
 			printf_s("미구현\n");
 		}
 		else if (Value == '3')
+		{
+			system("cls");
+			std::cout << "1:SizeCopy Test" << std::endl;
+			std::cout << "2:DataCopy Test" << std::endl;
+			std::cout << "3:Clear Screen" << std::endl;
+			std::cout << "4:Program End\n" << std::endl;
+		}
+		else if (Value == '4')
 		{
 			break;
 		}

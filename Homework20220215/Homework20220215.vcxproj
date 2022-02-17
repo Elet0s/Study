@@ -139,22 +139,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DataCopy.cpp">
+    <ClCompile Include="SizeCopy.cpp">
       <SubType>
       </SubType>
     </ClCompile>
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="SizeCopy.cpp">
+    <ClCompile Include="PrintConsole.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="DataCopy.cpp">
       <SubType>
       </SubType>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DataCopy.h">
+    <ClInclude Include="SizeCopy.h">
       <SubType>
       </SubType>
     </ClInclude>
-    <ClInclude Include="SizeCopy.h">
+    <ClInclude Include="PrintConsole.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="DataCopy.h">
       <SubType>
       </SubType>
     </ClInclude>

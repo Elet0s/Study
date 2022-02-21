@@ -29,9 +29,9 @@ int main(void)
 
 			PrintConsole SizePrint= PrintConsole();
 			
-			SizePrint.PrintA(MySize1);
-			SizePrint.PrintA(MySize2);
-			SizePrint.PrintA(MySize3);
+ 			SizePrint.PrintA(MySize1);
+ 			SizePrint.PrintA(MySize2);
+ 			SizePrint.PrintA(MySize3);
 
 			MySize1 = MySize2;
 			printf_s("1에 2대입 : ");
@@ -41,7 +41,6 @@ int main(void)
 			MySize1 = MySize3;
 			printf_s("1에 3대입 : ");
 			SizePrint.PrintA(MySize1);
-			
 
 		}
 		else if (Value == '2')
@@ -78,6 +77,7 @@ int main(void)
 		}
 		else if (Value == '4')
 		{
+
 			break;
 		}
 	}

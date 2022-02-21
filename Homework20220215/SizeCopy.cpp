@@ -104,5 +104,14 @@ SizeCopy::SizeCopy(unsigned int _Size)
 }
 SizeCopy::~SizeCopy()
 {
-
+    if (nullptr != ArrData1_)
+    {
+        delete[] ArrData1_;
+        ArrData1_ = nullptr;
+    }
+    if (nullptr != ArrData2_)
+    {
+        delete[] ArrData2_;
+        ArrData2_ = nullptr;
+    }
 }

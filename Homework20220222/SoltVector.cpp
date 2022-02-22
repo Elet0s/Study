@@ -38,7 +38,7 @@ public:
         return;
     }
 
-    inline void operator=(int* _Other)
+    inline void operator=(size_t* _Other)
     {
 
         for (size_t i = 0; i < Size_; i++)
@@ -51,7 +51,7 @@ public:
 
     inline void Solt()
     {
-        for (size_t j = 0; j < Size_ - 1; j++)
+        for (size_t j = 0; j < (Size_ - 1); j++)
         {
 
             for (size_t i = 0; i < Size_ - 1; i++)
@@ -110,29 +110,25 @@ int main()
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
     SoltVector NewArray = SoltVector(10);
-
-    SoltVector NewArray2 = SoltVector(20);
-
-    int Size = sizeof(SoltVector);
-
-    for (size_t i = 0; i < NewArray.GetSize(); i++)
-    {
-        NewArray[i] = i;
-    }
+    
 
     NewArray.AllValueSetting(0);
 
-    NewArray2 = NewArray;
+    size_t Value[10] = { 100,4,6,3,2,9,8,9,7,0 };//임의 수 넣어주면 됨
 
-
-    int Value[10] = { 100,4,6,3,2,9,8,9,7,0 };//임의 수 넣어주면 됨
-
-    NewArray2 = Value;
-
-    NewArray2.Solt();
-
-    for (size_t i = 0; i < NewArray2.GetSize(); i++)
+    for (size_t i = 0; i < NewArray.GetSize(); i++)
     {
-        std::cout << NewArray2[i] << std::endl;
+        std::cout << Value[i] << std::endl;
+    }
+
+    std::cout << "--------------------------------------" << std::endl;
+
+    NewArray = Value;
+
+    NewArray.Solt();
+
+    for (size_t i = 0; i < NewArray.GetSize(); i++)
+    {
+        std::cout << NewArray[i] << std::endl;
     }
 }

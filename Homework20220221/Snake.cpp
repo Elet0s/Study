@@ -7,8 +7,6 @@
 #include"Engine/ConsoleScreen.h"
 #include"GlobalGameLogic.h"
 
-
-
 int main()
 {
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
@@ -17,8 +15,6 @@ int main()
 
 	ConsoleObject* NewHead = new Head();
 	NewHead->Init({ 5, 5 }, "¡Ú");
-
-
 
 	ConsoleObject* NewBody = GlobalGameLogic::CreateBodyLogic(NewHead);
 
@@ -65,5 +61,4 @@ int main()
 		delete NewBody;
 		NewBody = nullptr;
 	}
-
 }

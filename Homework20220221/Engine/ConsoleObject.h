@@ -3,21 +3,20 @@
 #include "ConsoleScreen.h"
 
 
-
 // 설명 :
 class ConsoleObject
 {
 public:
 	ConsoleObject();
-
-	// constrcuter destructer
 	ConsoleObject(
 		const char* _Text,
 		const ConsoleVector& _Pos);
 
-	~ConsoleObject();
+	virtual ~ConsoleObject()
+	{
+	}
 
-	// delete Function
+
 	ConsoleObject(const ConsoleObject& _Other) = delete;
 	ConsoleObject(ConsoleObject&& _Other) noexcept = delete;
 	ConsoleObject& operator=(const ConsoleObject& _Other) = delete;
@@ -38,7 +37,7 @@ public:
 		Pos_ += _Value;
 	}
 
-
+	void GetPoint(ConsoleObject* _Arr);
 	virtual void Update();
 	virtual void Render();
 	virtual void OverLap(ConsoleObject* _Other);
@@ -77,5 +76,6 @@ private:
 	ConsoleVector Pos_;
 	// 내가 별이다.
 	char Text_[3];
+	ConsoleObject* Point_;
 };
 

@@ -3,8 +3,6 @@
 GameBlock::GameBlock()
 {
 }
-
 GameBlock::~GameBlock()
 {
 }
-

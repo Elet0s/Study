@@ -20,10 +20,6 @@ ConsoleObject::ConsoleObject(
 	SetRenderChar(_Text);
 }
 
-ConsoleObject::~ConsoleObject()
-{
-
-}
 
 void ConsoleObject::Update()
 {

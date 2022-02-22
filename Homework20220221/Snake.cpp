@@ -19,6 +19,7 @@ int main()
 	NewHead->Init({ 5, 5 }, "¡Ú");
 
 
+
 	ConsoleObject* NewBody = GlobalGameLogic::CreateBodyLogic(NewHead);
 
 	while (true)
@@ -46,14 +47,23 @@ int main()
 		if (NewHead->OverLapCheck(NewBody))
 		{
 			NewHead->OverLap(NewBody);
-			NewBody = nullptr;
+			if (nullptr != NewBody)
+			{
+				delete NewBody;
+				NewBody = nullptr;
+			}
 		}
 	}
-
 	ConsoleScreen::Destroy();
 	if (nullptr != NewHead)
 	{
 		delete NewHead;
 		NewHead = nullptr;
 	}
+	if (nullptr != NewBody)
+	{
+		delete NewBody;
+		NewBody = nullptr;
+	}
+
 }

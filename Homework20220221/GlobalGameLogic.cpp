@@ -38,4 +38,5 @@ ConsoleObject* GlobalGameLogic::CreateBodyLogic(const ConsoleObject* _Player)
 	ConsoleRandom Random = ConsoleRandom(time(nullptr));
 	NewBody->Init(AllPos[Random.Next(0, AllPos.size())], "£À");
 	return NewBody;
+
 }

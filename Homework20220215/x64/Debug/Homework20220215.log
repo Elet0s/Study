@@ -1,7 +1,10 @@
-﻿  DataCopy.cpp
+﻿  SizeCopy.cpp
+E:\c++test\Homework\Homework20220215\SizeCopy.cpp(17,16): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+E:\c++test\Homework\Homework20220215\SizeCopy.cpp(21,21): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
   Main.cpp
-  SizeCopy.cpp
-C:\Users\lthlo\Desktop\c++\Homework\Homework20220215\SizeCopy.cpp(17,16): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\lthlo\Desktop\c++\Homework\Homework20220215\SizeCopy.cpp(21,21): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  PrintConsole.cpp
+E:\c++test\Homework\Homework20220215\PrintConsole.cpp(8,25): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\c++test\Homework\Homework20220215\PrintConsole.cpp(16,26): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  DataCopy.cpp
   코드를 생성하고 있습니다...
-  Homework20220215.vcxproj -> C:\Users\lthlo\Desktop\c++\Homework\Homework20220113\x64\Debug\Homework20220215.exe
+  Homework20220215.vcxproj -> E:\c++test\Homework\Homework20220113\x64\Debug\Homework20220215.exe

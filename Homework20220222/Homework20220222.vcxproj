@@ -139,13 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="AssociateVector.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="AssociateVector.cpp">
+    <ClCompile Include="SoltVector.cpp">
       <SubType>
       </SubType>
     </ClCompile>

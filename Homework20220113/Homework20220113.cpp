@@ -1,10 +1,9 @@
 ﻿#include<iostream>
 void print(const char* a, char* b)
 {
-	int i = 0;
 	int j = 0;
 
-	for (i = 0; 0 != a[i]; i += 1)
+	for (int i = 0; 0 != a[i]; i += 1)
 	{
 		char ai = a[i];
 

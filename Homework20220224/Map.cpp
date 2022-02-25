@@ -74,7 +74,7 @@ private:
         {
             if (nullptr != LeftChild_)
             {
-                LeftChild_->MidOrder();
+                LeftChild_->LastOrder();
             }
             if (nullptr != RightChild_)
             {

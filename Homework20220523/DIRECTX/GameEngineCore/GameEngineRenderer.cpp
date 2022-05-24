@@ -76,7 +76,7 @@ void GameEngineRenderer::Render(float _DeltaTime)
 		CopyBuffer[i] = float4::VectorRotationToDegreeZ(CopyBuffer[i], Angle);
 
 		// ÀÌµ¿
-		CopyBuffer[i] = GetActor()->GetTransform().GetPosition() + float4::VectorRotationToDegreeZ(GetActor()->GetTransform().GetPosition(), Angle);
+		CopyBuffer[i] += GetActor()->GetTransform().GetPosition() +float4::VectorRotationToDegreeZ(GetActor()->GetTransform().GetPosition(), Angle);
 
 		
 

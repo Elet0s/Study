@@ -1,17 +1,1 @@
-﻿  GameEngineDebug.cpp
-  GameEngineDirectory.cpp
-  GameEngineFile.cpp
-  GameEngineInput.cpp
-  GameEngineMath.cpp
-  GameEngineNameObject.cpp
-  GameEnginePath.cpp
-  GameEngineRandom.cpp
-  GameEngineReadFile.cpp
-  GameEngineSound.cpp
-  GameEngineString.cpp
-  GameEngineTime.cpp
-  GameEngineTransform.cpp
-  GameEngineUpdateObject.cpp
-  GameEngineWindow.cpp
-  GameEngineWriteFile.cpp
-  GameEngineBase.vcxproj -> C:\Users\lthlo\Desktop\Work\AR40\DIRECTX\Bin\Debug\x64\GameEngineBase.lib
+﻿  GameEngineBase.vcxproj -> C:\Users\lthlo\Desktop\Work\Homework\Homework20220523\DIRECTX\Bin\Debug\x64\GameEngineBase.lib

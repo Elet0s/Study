@@ -1,6 +1,0 @@
-﻿  Homework20220126-t.cpp
-C:\Users\lthlo\Desktop\c++\Homework\Homework20220126\Homework20220126-t.cpp(33,11): warning C4477: 'printf_s' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'My'입니다.
-C:\Users\lthlo\Desktop\c++\Homework\Homework20220126\Homework20220126-t.cpp(34,11): warning C4477: 'printf_s' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'My'입니다.
-C:\Users\lthlo\Desktop\c++\Homework\Homework20220126\Homework20220126-t.cpp(40,11): warning C4477: 'printf_s' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'My'입니다.
-C:\Users\lthlo\Desktop\c++\Homework\Homework20220126\Homework20220126-t.cpp(41,11): warning C4477: 'printf_s' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'My'입니다.
-  Homework20220126.vcxproj -> C:\Users\lthlo\Desktop\c++\Homework\Homework20220113\x64\Debug\Homework20220126.exe

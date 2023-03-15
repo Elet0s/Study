@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{53a9225c-d3f8-415f-a0bd-043552afc39f}</ProjectGuid>
-    <RootNamespace>My0313</RootNamespace>
+    <ProjectGuid>{b05d3947-fa44-4dd6-b26b-21b42089cf02}</ProjectGuid>
+    <RootNamespace>My20230315</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>20230313</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,10 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="SelctionSort.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
+    <ClCompile Include="Insertion Sort.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

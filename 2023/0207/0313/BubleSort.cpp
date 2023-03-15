@@ -3,7 +3,9 @@
 #include <stdlib.h>
 
 // array_len은 배열 array의 길이입니다.
-int solution(int array[], size_t array_len)
+//홀수 배열 중간값 찾기
+
+int BubleSort(int array[], size_t array_len)
 {
     int answer = 0;
     int Num1 = 0;
@@ -26,7 +28,7 @@ int solution(int array[], size_t array_len)
             }
             else if (array[j] >= array[j + 1])
             {
-                Num1 = array[j];
+                Num1 = array[j];                            // std::swap  = 두 저장공간의 값을 교환하는 함수
                 array[j] = array[j + 1];
                 array[j + 1] = Num1;
             }
@@ -37,5 +39,10 @@ int solution(int array[], size_t array_len)
 
 int main()
 {
+   int A[5] = { 0 ,5, 3,4,1 };
+   int B[1] = { 0 };
+
+   BubleSort(A, 5);
+   BubleSort(B, 1);
     return 0;
 }

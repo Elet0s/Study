@@ -128,7 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="SelctionSort.cpp">
+    <ClCompile Include="BubleSort.cpp">
       <SubType>
       </SubType>
     </ClCompile>

@@ -2,26 +2,35 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <vector>
+#include<iostream>
 
 void SelectionSort(std::vector<int>& vec, size_t len)
 {
-    int Key = 0;
-    int Num = 0;
-
-    for (int i = 1; i < len -1; ++i) //0번은 이미 정렬 되어있다고 생각함
+    if (len > 1)
     {
-        Key = vec[i]; // 정렬 대상 
-
-        for (int j = i - 1; j >=0 && vec[j] > Key; --j) 
+        for (int i = 0; i < len; ++i)
         {
-            std::swap(vec[j], vec[j - 1]);
+            for (int j = i + 1; j < len; ++j)
+            {
+                if (vec[i] > vec[j])
+                {
+                    std::swap(vec[i], vec[j]);
+                }
+            }
         }
     }
+
+
+
 }
 
-//int main()
-//{
-//    std::vector<int>& A = { 0 };
-//    SelectionSort(A, 5);
-//	return 0;
-//}
+void main()
+{
+    std::vector<int> A = {44,1,20,3,3,5,8,99,24,10};
+    SelectionSort(A, 10);
+
+    for (size_t x = 0; x < 10; ++x)
+    {
+        std::cout << A[x] << std::endl;
+    }
+}

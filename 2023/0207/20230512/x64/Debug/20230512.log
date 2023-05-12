@@ -1,5 +1,4 @@
 ﻿  구명보트.cpp
-C:\Users\lthlo\Desktop\Study\2023\0207\20230512\구명보트.cpp(11,31): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\lthlo\Desktop\Study\2023\0207\20230512\구명보트.cpp(15,17): warning C4834: 'nodiscard' 특성이 포함된 함수의 반환 값을 버리는 중
-C:\Users\lthlo\Desktop\Study\2023\0207\20230512\구명보트.cpp(40,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+C:\Users\lthlo\Desktop\Study\2023\0207\20230512\구명보트.cpp(10,29): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\lthlo\Desktop\Study\2023\0207\20230512\구명보트.cpp(35,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
   20230512.vcxproj -> C:\Users\lthlo\Desktop\Study\2023\0207\x64\Debug\20230512.exe

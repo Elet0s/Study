@@ -33,8 +33,8 @@ int Solution(vector<int> people, int limit)
 }
 void main()
 {
-    vector<int> B = { 70 ,40 ,80, 50,100,200 };;
+    vector<int> B = {100,100,100,100,100,50,50  };;
 
-    Solution(B, 200);
+    Solution(B, 100);
 
 }

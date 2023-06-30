@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void dfs(int CurNum, int n, vector<vector<int>> AllNet, vector<int>& CurNet) // 주어진 CurNum기준으로 네트워크에 연결된 모든 좌표 탐색 
+void bfs(int CurNum, int n, vector<vector<int>> AllNet, vector<int>& CurNet) // 주어진 CurNum기준으로 네트워크에 연결된 모든 좌표 탐색 
 {
     for (int j = 0; j < n; j++)
     {
@@ -11,7 +11,7 @@ void dfs(int CurNum, int n, vector<vector<int>> AllNet, vector<int>& CurNet) // 
         if (AllNet[CurNum][j] == 1 && CurNet[j] == 0)//연결되어있고 탐색 안됬으면
         {
             CurNet[j] = 1;
-            dfs(j, n, AllNet, CurNet);
+            bfs(j, n, AllNet, CurNet);
         }
     }
 }
@@ -26,7 +26,7 @@ int solution(int n, vector<vector<int>> computers)
         {
             answer++;
             MyVcetor[i] = 1;
-            dfs(i, n, computers, MyVcetor);
+            bfs(i, n, computers, MyVcetor);
         }
     }
 

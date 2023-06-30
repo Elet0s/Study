@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{5bb20332-401c-413d-8664-9718fd9d1aed}</ProjectGuid>
-    <RootNamespace>My20230517</RootNamespace>
+    <ProjectGuid>{890f6a0d-b99a-47be-b140-08555bf000b0}</ProjectGuid>
+    <RootNamespace>My20230622</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="불량사용자.cpp" />
+    <ClCompile Include="어소트락01.cpp" />
+    <ClCompile Include="어소트락02.cpp" />
+    <ClCompile Include="어소트락03.cpp" />
+    <ClCompile Include="어소트락04.cpp" />
+    <ClCompile Include="어소트락05.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

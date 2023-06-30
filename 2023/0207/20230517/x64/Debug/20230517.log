@@ -1,0 +1,3 @@
+﻿  불량사용자.cpp
+C:\Users\lthlo\Desktop\Study\2023\0207\20230517\불량사용자.cpp(73,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  20230517.vcxproj -> C:\Users\lthlo\Desktop\Study\2023\0207\x64\Debug\20230517.exe

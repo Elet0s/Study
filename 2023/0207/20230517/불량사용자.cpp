@@ -1,10 +1,9 @@
 #include <string>
 #include <vector>
-#include <set>
+#include <unordered_set>
 using namespace std;
-
-int answer = 0;
 vector<string> BanId, UserId;//문자열 비교 준비
+unordered_set<string> DuplicationCheak; //Set으로 중복안되게 수집
 bool CheakPack[8] = { false, }; // 유저리스트 <->밴리스트 비교 체크용
 
 
@@ -12,18 +11,20 @@ void DFS(int _idx)//밴유저수만큼 선택을 해야하니 깊이처럼 사용할 것임
 {
     if (_idx == BanId.size()) //경우의 수 끝까지 왔으면
     {
+        string str = "";//초기화
         for (size_t i = 0; i < UserId.size(); i++)
         {
             if (CheakPack[i] == true)
             {
-                answer += 1;
-                return;
+                str += (i + '0');
             }
         }
+        DuplicationCheak.insert(str);
+        return;
     }
     for (size_t i = 0; i < UserId.size(); i++)//밴유저 하나와 전체유저를 비교해줘야함
     {
-        if (CheakPack[i] == true)
+        if (CheakPack[i] == true) //자리에 누가 들어가 있음
         {
             continue;
         }
@@ -66,13 +67,13 @@ int solution(vector<string> user_id, vector<string> banned_id)
 
     DFS(0);
 
-    return answer;
+    return DuplicationCheak.size();
 }
-
 void main()
 {
     vector<string> UserList = { "frodo", "fradi", "crodo", "abc123", "frodoc" };
-    vector<string> BanUserList01{"fr*d*", "abc1**"};
-    vector<string>BanUserList02{"*rodo", "*rodo", "******"};
-    solution(UserList, BanUserList02);
+    vector<string>BanUserList01{ "*rodo", "******" };
+    vector<string>BanUserList02{ "*rodo", "*rodo", "******" };
+    vector<string>BanUserList03{ "fr*d*", "*rodo", "******","*rodo" };
+    solution(UserList, BanUserList01);
 }

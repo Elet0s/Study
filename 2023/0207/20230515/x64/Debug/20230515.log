@@ -1,3 +1,3 @@
 ﻿  네트워크.cpp
-C:\Users\lthlo\Desktop\Study\2023\0207\20230515\네트워크.cpp(37,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
-  20230515.vcxproj -> C:\Users\lthlo\Desktop\Study\2023\0207\x64\Debug\20230515.exe
+C:\Users\lthlo\Desktop\Study\Code\2023\0207\20230515\네트워크.cpp(37,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  20230515.vcxproj -> C:\Users\lthlo\Desktop\Study\Code\2023\0207\x64\Debug\20230515.exe

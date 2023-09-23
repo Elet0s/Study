@@ -74,6 +74,6 @@ void main()
     vector<string> UserList = { "frodo", "fradi", "crodo", "abc123", "frodoc" };
     vector<string>BanUserList01{ "*rodo", "******" };
     vector<string>BanUserList02{ "*rodo", "*rodo", "******" };
-    vector<string>BanUserList03{ "fr*d*", "*rodo", "******","*rodo" };
-    solution(UserList, BanUserList01);
+    vector<string>BanUserList03{ "fr*d*", "*rodo", "******","******" };
+    solution(UserList, BanUserList03);
 }
